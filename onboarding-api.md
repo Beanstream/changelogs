@@ -1,25 +1,35 @@
 # Onboarding API Change Log
-## Reflects backwards-incompatible updates:
 
 ## 2016-08-18
-        - Add Personal Guarantee Accepted to agreement all flows (optional)
-        - PSP CAD: Business Currency is removed
-        - PSP CAD: Owners is no longer required
-        - PSP CAD: business.has_exising_account is removed
-        - PSP CAD: business.owners minimum items changed from 1 to 0
-        - PSP CAD: business.owners.percentage has been removed
-        - Pending Issues now has a message property: A human readable message about the error
-        - Pending Issues renamed field -> name
-        - Pending Issues renamed code -> reason
-        - Error responses renamed field -> name
-        - Error responses renamed code -> reason
-        - Error response added message property
-        - EFT CAD: email becomes required
-        - EFT CAD: date of birth is **new** and is required
-        - EFT CAD: directors is no longer required
-        - EFT CAD: services description is **new** and required
-        - EFT CAD: directors start_date is removed
-        - EFT CAD: directors percentage is removed
+
+### All Flows
+        -Agreement.personal_guarantee_accepted is **new** and is optional
+           Although optional the personal guarantee must be accepted where entity_type is "sole_proprietor" or "partnership"
+        - Remove restriction on country fields so that full ISO 3166 list of country codes can be accepted
+        - Address.region and Address.postal_code are now optional
+        - pending_issues.message is new and contains a human readable message about the error
+        - Error responses has renamed field error.name
+        - Error responses has renamed field error.reason
+        - Error.message is new and contains a human readable message about the error
+
+### PSP CAD
+        - PspCadOwner all fields are now optional
+           Although optional PspCadOwner fields must be supplied where PspCadBusiness.entity_type is "non_profit" or "corporation" 
+        - PspCadBusiness.has_exising_account is removed
+        - PspCadOwners.percentage is removed
+        - PspCadBusiness.currency is removed
+        
+### EFT CAD
+        - EftCadDirector all fields are now optional
+           Although optional EftCadDirector fields must be supplied where EftCadBusiness.entity_type is "non_profit" or "corporation" or "publically_traded"
+        - EftCadDirector.start_date is removed
+        - EftCadDirector.percentage is removed
+        - EftApplicant.email is now required
+        - EftCadApplicant.date_of_birth is **new** and required
+        - EftCadBusiness.services_description is **new** and required
+        
+        
+        
 
 ## 2016-06-11
 ###  API version is now required in the header attributes X-API-Version: 2016-06-11
