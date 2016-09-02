@@ -4,7 +4,8 @@
 
 ### All Flows
         -Agreement.personal_guarantee_accepted is **new** and is optional
-           Although optional the personal guarantee must be accepted where entity_type is "sole_proprietor" or "partnership"
+           Although optional the personal guarantee must be accepted where entity_type is "sole_proprietor"  
+           or "partnership"
         - Remove restriction on country fields so that full ISO 3166 list of country codes can be accepted
         - Address.region and Address.postal_code are now optional
         - pending_issues.message is new and contains a human readable message about the error
@@ -14,14 +15,16 @@
 
 ### PSP CAD
         - PspCadOwner all fields are now optional
-           Although optional PspCadOwner fields must be supplied where PspCadBusiness.entity_type is "non_profit" or "corporation" 
+           Although optional PspCadOwner fields must be supplied where PspCadBusiness.entity_type is "non_profit"  
+           or "corporation" 
         - PspCadBusiness.has_exising_account is removed
         - PspCadOwners.percentage is removed
         - PspCadBusiness.currency is removed
         
 ### EFT CAD
         - EftCadDirector all fields are now optional
-           Although optional EftCadDirector fields must be supplied where EftCadBusiness.entity_type is "non_profit" or "corporation" or "publically_traded"
+           Although optional EftCadDirector fields must be supplied where EftCadBusiness.entity_type is "non_profit"  
+           or "corporation" or "publically_traded"
         - EftCadDirector.start_date is removed
         - EftCadDirector.percentage is removed
         - EftApplicant.email is now required
