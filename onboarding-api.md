@@ -4,6 +4,7 @@
 
 ### All API version Changes
 * File name on get response now includes the file type extension
+* API Version 2016-06-10 Deprecated and will be removed in the next release
 
 ### Introduced API version 2016-08-18
 * Agreement.personal_guarantee_accepted is **new** and is optional
@@ -36,7 +37,7 @@
 * EftCadBusiness.services_description is **new** and required
         
         
-        
+## Release Date: June 11, 2016        
 ## 2016-06-11
 ###  API version is now required in the header attributes X-API-Version: 2016-06-11
         - Additional Properties is now set to False
@@ -58,5 +59,8 @@
             -- Country
         - PSP US Flow: Social Security Number is now required.
 
+
+## Release Date: June 10, 2016  
 ## 2016-06-10
     - First release of the api specification
+    
