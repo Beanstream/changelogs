@@ -7,6 +7,7 @@
 * API Version 2016-06-10 Deprecated and will be removed in the next release
 
 ### Introduced API version 2016-08-18
+#### Common changes for all workflows
 * Agreement.personal_guarantee_accepted is **new** and is optional
  Although optional the personal guarantee must be accepted where entity_type is "sole_proprietor"  
   or "partnership"
@@ -17,8 +18,7 @@
 * Error responses has renamed field error.reason
  Error.message is new and contains a human readable message about the error
 
-
-### PSP CAD
+#### PSP CAD
 * PspCadOwner all fields are now optional
  Although optional PspCadOwner fields must be supplied where PspCadBusiness.entity_type is "non_profit"  
  or "corporation" 
@@ -26,7 +26,7 @@
 * PspCadOwners.percentage is removed
 * PspCadBusiness.currency is removed
         
-### EFT CAD
+#### EFT CAD
 * EftCadDirector all fields are now optional
 * Although optional EftCadDirector fields must be supplied where EftCadBusiness.entity_type is "non_profit"  
   or "corporation" or "publically_traded"
