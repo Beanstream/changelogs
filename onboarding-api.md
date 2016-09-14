@@ -1,8 +1,11 @@
 # Onboarding API Change Log
 
-## 2016-08-18
+## Release Date: September 10, 2016
 
-### All Flows
+### All API version Changes
+* File name on get response now includes the file type extension
+
+### Introduced API version 2016-08-18
 * Agreement.personal_guarantee_accepted is **new** and is optional
  Although optional the personal guarantee must be accepted where entity_type is "sole_proprietor"  
   or "partnership"
@@ -12,6 +15,7 @@
 * Error responses has renamed field error.name
 * Error responses has renamed field error.reason
  Error.message is new and contains a human readable message about the error
+
 
 ### PSP CAD
 * PspCadOwner all fields are now optional
@@ -33,7 +37,6 @@
         
         
         
-
 ## 2016-06-11
 ###  API version is now required in the header attributes X-API-Version: 2016-06-11
         - Additional Properties is now set to False
