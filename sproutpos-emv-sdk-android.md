@@ -1,6 +1,7 @@
 # sproutPOS EMV SDK for Android Changelog
 ## Version 2.2.0
 
+* Initial support for multi-terminal use on a single Android device.  See documentation for changes. 
 * Now validating transaction amounts before allowing them to be processed. Will return a TransactionError with error code 
  TransactionError.INVALID_TRANSACTION_AMOUNT
 * Updated the TransactionError error message if you attempt to process an EMV transaction and the iCMP is not connected
