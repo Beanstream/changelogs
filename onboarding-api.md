@@ -1,5 +1,13 @@
 # Onboarding API Change Log
 
+## Release Date: November 16, 2016
+### API version 2016-08-18
+#### PSP-USD
+- Extensive changes to spec (see developer docs for more details http://developer.beanstream.com/documentation/onboarding-api-reference/)
+
+#### GW-CDN
+- New Gateway Canadian spec added
+
 ## Release Date: September 10, 2016
 
 ### All API version Changes
