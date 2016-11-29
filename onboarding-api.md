@@ -1,5 +1,11 @@
 # Onboarding API Change Log
 
+## Release Date: November 28, 2016
+### API version 2016-08-18
+#### GW-USA
+- New Gateway USA spec added
+
+
 ## Release Date: November 16, 2016
 ### API version 2016-08-18
 #### PSP-USD
