@@ -1,5 +1,13 @@
 # Onboarding API Change Log
 
+## Release Date: March 6, 2017
+### API version 2016-08-18
+#### GW-USA, GW-CDN
+- New fields for first data terminals
+ - discover_merchant_id
+ - amex_merchant_id
+
+
 ## Release Date: November 28, 2016
 ### API version 2016-08-18
 #### GW-USA
